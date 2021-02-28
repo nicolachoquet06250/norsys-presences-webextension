@@ -6,3 +6,4 @@
  - https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/installation_temporaire_dans_Firefox
  - https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript
  - about:debugging#/runtime/this-firefox
+ - https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea
