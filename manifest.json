@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Norsys | Fiche de présence",
+    "version": "1.0",
+  
+    "description": "Norsys | Fiche de présence",
+    "homepage_url": "https://norsys-sophia-presence.nicolaschoquet.fr",
+    "icons": {
+      "48": "icons/logo.png"
+    },
+  
+    "permissions": [
+      "<all_urls>",
+      "tabs",
+      "activeTab",
+      "webRequest",
+      "storage"
+    ],
+  
+    "browser_action": {
+      "default_icon": "icons/logo.png",
+      "default_title": "Norsys | Fiche de présence",
+      "default_popup": "popup/index.html"
+    }
+  }
+  

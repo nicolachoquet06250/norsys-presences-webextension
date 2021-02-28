@@ -1,0 +1,143 @@
+.norsys-modal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.norsys-modal .modal-content {
+    max-width: 90%;
+    padding: 15px;
+    max-height: 90vh;
+}
+
+.norsys-modal:target {
+    visibility: visible;
+}
+
+.modal-body {
+    overflow: auto;
+}
+
+.norsys-dropdown > input[type="checkbox"] {
+    display: none;
+}
+
+.norsys-dropdown > input[type="checkbox"] + label {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px 5px 5px 5px;
+    background: lightgray;
+    cursor: pointer;
+}
+
+.norsys-dropdown > input[type="checkbox"] + label + .norsys-dropdown-content {
+    position: absolute;
+    margin-top: 5px;
+    height: 0;
+    min-width: 118px;
+    width: auto;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.norsys-dropdown > input[type="checkbox"]:checked + label i {
+    transform: rotate(180deg);
+}
+
+.norsys-dropdown > input[type="checkbox"]:checked + label + .norsys-dropdown-content {
+    visibility: visible;
+    height: auto;
+    border-radius: 5px 5px 5px 5px;
+    background: lightgray;
+}
+
+.norsys-dropdown > input[type="checkbox"] + label + .norsys-dropdown-content > ul > li {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    width: 100%;
+}
+
+.norsys-dropdown > input[type="checkbox"] + label + .norsys-dropdown-content > ul > li a {
+    color: black;
+    text-decoration: none;
+}
+
+.norsys-dropdown > input[type="checkbox"] + label + .norsys-dropdown-content > ul > li:hover {
+    background: gray;
+}
+
+.norsys-dropdown > input[type="checkbox"] + label + .norsys-dropdown-content > ul > li:hover a {
+    color: white;
+}
+
+.norsys-dropdown > input[type="checkbox"] + label + .norsys-dropdown-content > ul > li:last-child {
+    border-bottom: none;
+}
+
+
+.mr-1 {
+    margin-right: 15px;
+}
+
+.calendar-header > div:nth-child(2) > div {
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.calendar-day {
+    height: 100px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.calendar-day:hover {
+    box-shadow: 1px 1px 10px;
+}
+
+.calendar-day.weekend:hover, .calendar-day.previous-month-day:hover, .calendar-day.next-month-day:hover {
+    box-shadow: none;
+}
+
+.calendar-day.previous-month-day,
+.calendar-day.next-month-day {
+    background: lightgray;
+    border-radius: 0px;
+}
+
+.calendar-day.today {
+    border: 1px solid #ff005b;
+}
+
+.calendar-day .badges-container {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    text-align: right;
+}
+
+.calendar-day .badges-container .nb-reservations {
+    margin-right: 5px;
+}
+
+.calendar-day .badges-container + div {
+    height: calc(100% - 25px);
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
